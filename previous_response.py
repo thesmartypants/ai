@@ -1,2 +1,1 @@
-result = 2 + 2
-print(result)
+print(2 + 2)
