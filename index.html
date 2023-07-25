@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Interaction</title>
+</head>
+<body>
+<h1>AI Interaction</h1>
+<input type="text" id="userInput" placeholder="Enter your question">
+<button onclick="getAIResponse()">Submit</button>
+
+<br><br>
+
+<textarea id="aiResponse" rows="10" cols="50" readonly></textarea>
+
+<script>
+    async function getAIResponse() {
+        const userInput = document.getElementById('userInput').value;
+        const response = await fetch(`http://localhost:5000/process_input/${encodeURIComponent(userInput)}`);
+        const responseData = await response.json();
+        const responseText = responseData.response;
+        document.getElementById('aiResponse').value = responseText;
+    }
+</script>
+</body>
+</html>
