@@ -1,0 +1,212 @@
+{
+    "hello": [
+        "Hi! Nice to meet you!",
+        "Hello! How can I assist you?",
+        "Hey there! How can I help?",
+        "Greetings! What can I do for you?",
+        "Hi, how can I assist you?"
+    ],
+    "show me code print hi": [
+        "Sure, here's an example code:\n\nprint('Hi!')",
+        "Certainly! Here's the code:\n\nprint('Hi!')",
+        "Of course! Here's the code you requested:\n\nprint('Hi!')"
+    ],
+    "whats 2+2": [
+        "2 + 2 is 4.",
+        "The answer to 2 + 2 is 4.",
+        "The result of 2 + 2 is 4."
+    ],
+    "write function prints hi": [
+        "Sure, here's an example function:\n\ndef print_hi():\n  print('hi')",
+        "Certainly! Here's the function you asked for:\n\ndef print_hi():\n  print('hi')",
+        "Of course! Here's the code for the function:\n\ndef print_hi():\n  print('hi')"
+    ],
+    "good job": [
+        "Thanks!",
+        "Great job!",
+        "Well done!",
+        "You did it!",
+        "Keep up the good work!"
+    ],
+    "great job": [
+        "Thanks!",
+        "Excellent work!",
+        "Impressive!",
+        "You nailed it!",
+        "Bravo!"
+    ],
+    "if list contains element": [
+        "Use the 'in' keyword. For example, 'if element in my_list:'",
+        "To check if a list contains an element, use the 'in' keyword. For example, 'if element in my_list:'"
+    ],
+    "define function": [
+        "def function(arg):\n   return arg+1",
+        "To define a function, use the 'def' keyword followed by the function name, parentheses, and a colon. Indent the code block for the function body."
+    ],
+    "class": [
+        "class MyClass:\n   def __init__(self):\n     self.did_work=\"It worked!\"\n     self.print_res()\n\n   def print_res(self):\n     print(self.did_work)",
+        "To create a class, use the 'class' keyword followed by the class name and a colon. Indent the class body to define its methods and properties."
+    ],
+    "read file": [
+        "To read a file, use the 'open' function to open the file in read mode ('r'). Then, you can use methods like 'read', 'readline', or 'readlines' to read the content.",
+        "You can read a file using the 'open' function with 'r' mode, and then use methods like 'read', 'readline', or 'readlines' to access its content."
+    ],
+    "write file": [
+        "To write to a file, use the 'open' function to open the file in write mode ('w' or 'a' for append). Then, use the 'write' method to write the content to the file.",
+        "You can write to a file by opening it in write mode ('w' or 'a' for append) using the 'open' function and then using the 'write' method to add content."
+    ],
+    "convert string uppercase": [
+        "You can use the 'upper' method of the string. For example, 'my_string.upper()'",
+        "To convert a string to uppercase, you can use the 'upper' method of the string. For example, 'my_string.upper()'"
+    ],
+    "convert string lowercase": [
+        "You can use the 'lower' method of the string. For example, 'my_string.lower()'",
+        "To convert a string to lowercase, you can use the 'lower' method of the string. For example, 'my_string.lower()'"
+    ],
+    "remove whitespace string": [
+        "You can use the 'strip' method of the string. For example, 'my_string.strip()'",
+        "To remove whitespace from a string, you can use the 'strip' method. For example, 'my_string.strip()'"
+    ],
+    "calculate factorial": [
+        "You can use recursion or a loop to calculate the factorial of a number.",
+        "To calculate the factorial of a number, you can use recursion or a loop."
+    ],
+    "reverse string": [
+        "You can use slicing to reverse a string. Here's how you can do it:\n\nmy_string = 'hello'\nreversed_string = my_string[::-1]\nprint(reversed_string)",
+        "To reverse a string, you can use slicing. Here's an example:\n\nmy_string = 'hello'\nreversed_string = my_string[::-1]\nprint(reversed_string)"
+    ],
+    "find maximum element list": [
+        "You can use the 'max' function to find the maximum element in a list. Here's an example:\n\nmy_list = [3, 7, 1, 9, 5]\nmax_element = max(my_list)\nprint(max_element)",
+        "To find the maximum element in a list, you can use the 'max' function. Here's an example:\n\nmy_list = [3, 7, 1, 9, 5]\nmax_element = max(my_list)\nprint(max_element)"
+    ],
+    "sort list": [
+        "You can use the 'sort' method to sort a list in place. Here's an example:\n\nmy_list = [3, 7, 1, 9, 5]\nmy_list.sort()\nprint(my_list)",
+        "To sort a list, you can use the 'sort' method. Here's an example:\n\nmy_list = [3, 7, 1, 9, 5]\nmy_list.sort()\nprint(my_list)"
+    ],
+    "if string palindrome": [
+        "You can use slicing to check if a string is a palindrome. Here's an example:\n\nmy_string = 'radar'\nis_palindrome = my_string == my_string[::-1]\nprint(is_palindrome)",
+        "To check if a string is a palindrome, you can use slicing. Here's an example:\n\nmy_string = 'radar'\nis_palindrome = my_string == my_string[::-1]\nprint(is_palindrome)"
+    ],
+    "count occurrences character string": [
+        "You can use the 'count' method of the string. Here's an example:\n\nmy_string = 'hello'\noccurrences = my_string.count('l')\nprint(occurrences)",
+        "To count the occurrences of a character in a string, you can use the 'count' method. Here's an example:\n\nmy_string = 'hello'\noccurrences = my_string.count('l')\nprint(occurrences)"
+    ],
+    "get current date time": [
+        "You can use the 'datetime' module to get the current date and time. Here's an example:\n\nimport datetime\n\ncurrent_datetime = datetime.datetime.now()\nprint(current_datetime)",
+        "To get the current date and time, you can use the 'datetime' module. Here's an example:\n\nimport datetime\n\ncurrent_datetime = datetime.datetime.now()\nprint(current_datetime)"
+    ],
+    "format strings": [
+        "You can use the 'format' method of the string. Here's an example:\n\nname = 'Alice'\nage = 30\nformatted_string = 'My name is {} and I am {} years old'.format(name, age)\nprint(formatted_string)",
+        "To format strings, you can use the 'format' method of the string. Here's an example:\n\nname = 'Alice'\nage = 30\nformatted_string = 'My name is {} and I am {} years old'.format(name, age)\nprint(formatted_string)"
+    ],
+    "use loop": [
+        "You can use a 'for' loop to iterate over elements in a sequence.",
+        "To use a loop, you can use a 'for' loop to iterate over elements in a sequence."
+    ],
+    "use while loop": [
+        "You can use a 'while' loop to repeatedly execute a block of code until a condition is no longer true.",
+        "To use a while loop, you can repeatedly execute a block of code until a condition is no longer true."
+    ],
+    "use if statements": [
+        "You can use 'if', 'elif', and 'else' statements to control the flow of your program based on conditions.",
+        "To use if statements, you can use 'if', 'elif', and 'else' to control the flow of your program based on conditions."
+    ],
+    "find length string": [
+        "You can use the 'len' function to find the length of a string. Here's an example:\n\nmy_string = 'hello'\nlength = len(my_string)\nprint(length)",
+        "To find the length of a string, you can use the 'len' function. Here's an example:\n\nmy_string = 'hello'\nlength = len(my_string)\nprint(length)"
+    ],
+    "concatenate strings": [
+        "You can use the '+' operator or the 'join' method to concatenate strings.",
+        "To concatenate strings, you can use the '+' operator or the 'join' method."
+    ],
+    "split string list": [
+        "You can use the 'split' method of the string to split it into a list of substrings. Here's an example:\n\nmy_string = 'apple orange banana'\nmy_list = my_string.split()\nprint(my_list)",
+        "To split a string into a list of substrings, you can use the 'split' method. Here's an example:\n\nmy_string = 'apple orange banana'\nmy_list = my_string.split()\nprint(my_list)"
+    ],
+    "generate random numbers": [
+        "You can use the 'random' module to generate random numbers.",
+        "To generate random numbers, you can use the 'random' module."
+    ],
+    "if data type variable": [
+        "You can use the 'type' function to check the data type of a variable.",
+        "To check the data type of a variable, you can use the 'type' function."
+    ],
+    "convert number string": [
+        "You can use the 'str' function to convert a number to a string. Here's an example:\n\nx = 42\nstr_x = str(x)\nprint(str_x)",
+        "To convert a number to a string, you can use the 'str' function. Here's an example:\n\nx = 42\nstr_x = str(x)\nprint(str_x)"
+    ],
+    "get user input": [
+        "You can use the 'input' function to get user input. Here's an example:\n\nname = input('Enter your name: ')\nprint('Hello, ' + name + '!')",
+        "To get user input, you can use the 'input' function. Here's an example:\n\nname = input('Enter your name: ')\nprint('Hello, ' + name + '!')"
+    ],
+    "remove element list": [
+        "You can use the 'remove' method of the list to remove a specific element. Here's an example:\n\nmy_list = [1, 2, 3]\nmy_list.remove(2)\nprint(my_list)",
+        "To remove an element from a list, you can use the 'remove' method. Here's an example:\n\nmy_list = [1, 2, 3]\nmy_list.remove(2)\nprint(my_list)"
+    ],
+    "if file exists": [
+        "You can use the 'os.path.exists' function to check if a file exists.",
+        "To check if a file exists, you can use the 'os.path.exists' function."
+    ],
+    "get current working directory": [
+        "You can use the 'os.getcwd' function to get the current working directory.",
+        "To get the current working directory, you can use the 'os.getcwd' function."
+    ],
+    "list files directory": [
+        "You can use the 'os.listdir' function to list files in a directory.",
+        "To list files in a directory, you can use the 'os.listdir' function."
+    ],
+    "create virtual environment": [
+        "You can use the 'venv' module to create a virtual environment.",
+        "To create a virtual environment, you can use the 'venv' module."
+    ],
+    "activate virtual environment": [
+        "You can use the 'source' command on macOS and Linux or the 'Scripts/activate' script on Windows to activate a virtual environment.",
+        "To activate a virtual environment, use the 'source' command on macOS and Linux or the 'Scripts/activate' script on Windows."
+    ],
+    "install packages using pip virtual environment": [
+        "After activating the virtual environment, you can use the 'pip' command to install packages.",
+        "To install packages using pip in a virtual environment, first, activate the virtual environment, then use the 'pip' command."
+    ],
+    "exit script": [
+        "You can use the 'exit' function to exit a script.",
+        "To exit a script, you can use the 'exit' function."
+    ],
+    "dictionary": [
+        "You can use curly braces {} to create a dictionary with key-value pairs.",
+        "To create a dictionary, use curly braces {} with key-value pairs."
+    ],
+    "access elements dictionary": [
+        "You can use square brackets [] to access elements in a dictionary using their keys.",
+        "To access elements in a dictionary, use square brackets [] with the corresponding keys."
+    ],
+    "update elements dictionary": [
+        "You can use square brackets [] to update elements in a dictionary using their keys.",
+        "To update elements in a dictionary, use square brackets [] with the corresponding keys."
+    ],
+    "remove elements dictionary": [
+        "You can use the 'del' keyword to remove elements from a dictionary.",
+        "To remove elements from a dictionary, use the 'del' keyword with the key of the element to be removed."
+    ],
+    "iterate over items dictionary": [
+        "You can use a 'for' loop to iterate over items in a dictionary.",
+        "To iterate over items in a dictionary, you can use a 'for' loop."
+    ],
+    "clear list": [
+        "You can use the 'clear' method of the list to remove all elements.",
+        "To clear all elements from a list, use the 'clear' method."
+    ],
+    "clear dictionary": [
+        "You can use the 'clear' method of the dictionary to remove all key-value pairs.",
+        "To clear all key-value pairs from a dictionary, use the 'clear' method."
+    ],
+    "simple calculator program": [
+        "def calculate(num1, num2):\n  return num1 + num2",
+        "Here's a simple calculator program:\n\ndef calculate(num1, num2):\n  return num1 + num2"
+    ],
+    "get sum 2 numbers": [
+        "Certainly!\n\ndef add(*args):\n  return sum(args)"
+    ],
+    "are bot": [
+        "This is a simple chatbot or a text-based conversational agent.\n It responds to user inputs using predefined patterns and responses stored in a knowledge base.\n Although it lacks real intelligence and is based on fixed response patterns, it is still designed to provide interactions with users and handle certain queries based on the knowledge it has been provided."
+    ]
+}
