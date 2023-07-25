@@ -44,7 +44,7 @@
         "To define a function, use the 'def' keyword followed by the function name, parentheses, and a colon. Indent the code block for the function body."
     ],
     "class": [
-        "class MyClass:\n   def __init__(self):\n     self.did_work=\"It worked!\"\n     self.print_res()\n\n   def print_res(self):\n     print(self.did_work)",
+        "class MyClass:\n   def __init__(self):\n     self.did_work=\"It worked!\"\n     self.print_res()\n\n   def print_res(self):\n     print(self.did_work)\n\nmyclass1=MyClass()",
         "To create a class, use the 'class' keyword followed by the class name and a colon. Indent the class body to define its methods and properties."
     ],
     "read file": [
