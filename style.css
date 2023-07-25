@@ -1,0 +1,23 @@
+        @keyframes slideIn {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        body{
+            animation: slideIn 1s ease-in-out;
+        }
+
+        #aiResponse, #output {
+            background-color: black;
+            color: #00FF00; /* Set the text color to green */
+        }
+
+        #output {
+            margin-top: 10px;
+        }
