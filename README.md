@@ -24,8 +24,6 @@ myclass1=MyClass()
 Now you can enter Run -- again its not case sensitive -- and it will run the previous code:
 
 ```
-
-AI:
 You: Run
 
 
