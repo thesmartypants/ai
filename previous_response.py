@@ -1,11 +1,10 @@
-# Example previous response
 
-class MyClass:
-   def __init__(self):
-     self.did_work="It worked!"
-     self.print_res()
+class Student:
+   def __init__(self, name):
+     self.name = name
 
-   def print_res(self):
-     print(self.did_work)
+   def display_name(self):
+     print(f'My name is {self.name}.')
 
-myclass1=MyClass()
+student1 = Student('Alice')
+student1.display_name()

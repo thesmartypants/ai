@@ -2,25 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AI Interaction</title>
+    <title>AI</title>
+    <style>
+        #aiResponse, #output {
+            background-color: black;
+            color: #00FF00; /* Set the text color to green */
+        }
+
+        #output {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1>AI Interaction</h1>
-<input type="text" id="userInput" placeholder="Enter your question">
-<button onclick="getAIResponse()">Submit</button>
-
-<br><br>
-
-<textarea id="aiResponse" rows="10" cols="50" readonly></textarea>
+<h1>AI</h1>
+<input type="text" id="userInput" placeholder="Enter your question" style="background-color: white;">
+<br>Code:<br>
+<textarea id="aiResponse" rows="10" cols="50" oninput="runCode()" readonly></textarea>
+<br>Output:<br>
+<textarea id="output" rows="10" cols="50" readonly></textarea>
 
 <script>
+    let typingTimer;
+    let aiResponseValue = ""; // Variable to store the AI response
+
+    const doneTypingInterval = 500; // Adjust the delay (in milliseconds) as per your preference
+
     async function getAIResponse() {
+        clearTimeout(typingTimer);
         const userInput = document.getElementById('userInput').value;
-        const response = await fetch(`http://localhost:5000/process_input/${encodeURIComponent(userInput)}`);
-        const responseData = await response.json();
-        const responseText = responseData.response;
-        document.getElementById('aiResponse').value = responseText;
+        if (userInput) {
+            typingTimer = setTimeout(async function () {
+                const response = await fetch(`http://localhost:5000/process_input/${encodeURIComponent(userInput)}`);
+                const responseData = await response.json();
+                aiResponseValue = responseData.response; // Store the AI response
+                document.getElementById('aiResponse').value = aiResponseValue; // Update the text area
+                runCode(); // Execute the code automatically when AI response is updated
+            }, doneTypingInterval);
+        }
     }
+
+    function runCode() {
+        const code = document.getElementById('aiResponse').value; // Get the code from "Code" text area
+        if (code) {
+            fetch('http://localhost:5000/process_input/run')
+                .then(response => response.json())
+                .then(data => {
+                    const output = data.response;
+                    document.getElementById('output').value = output;
+                })
+                .catch(error => console.error(error));
+        }
+    }
+
+    document.getElementById('userInput').addEventListener('input', getAIResponse);
+    document.getElementById('aiResponse').addEventListener('keyup', runCode); // Add event listener for "Code" textarea
 </script>
 </body>
 </html>
