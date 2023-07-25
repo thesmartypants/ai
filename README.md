@@ -9,7 +9,7 @@ Ok this is an example output:
 ```
 You: How do i make a class in python // its not really case sensitive
 
-AI:
+Ai:
  class MyClass:
    def __init__(self):
      self.did_work="It worked!"
@@ -24,19 +24,8 @@ myclass1=MyClass()
 Now you can enter Run -- again its not case sensitive -- and it will run the previous code:
 
 ```
-You: How do i make a class in python // its not really case sensitive
 
 AI:
- class MyClass:
-   def __init__(self):
-     self.did_work="It worked!"
-     self.print_res()
-
-   def print_res(self):
-     print(self.did_work)
-
-myclass1=MyClass()
-
 You: Run
 
 
