@@ -1,0 +1,5 @@
+x=open('file.txt','w')
+x.write('Im sooo smart bitch')
+x.close()
+x=open('file.txt','r')
+print(x.read())

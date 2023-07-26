@@ -1,3 +1,4 @@
+# main.py
 import os
 import knowledge
 import random
@@ -38,11 +39,10 @@ def ai(sentence):
         else:
             return "No previous input to execute."
 
-    # If the AI doesn't know the answer, return a special response
     answer = input("I don't know the answer to that. Please tell me:")
     knowledge.add_to_knowledge(sentence_lower, answer)
     prev_response = answer
-    return "ASK_USER"
+    return "Okay, I've learned something new!"
 
 @app.route("/process_input/<sentence>", methods=["GET"])
 def process_input(sentence):
@@ -52,15 +52,16 @@ def process_input(sentence):
         return jsonify({"response": "Exiting AI..."})
 
     response = ai(user_input)
-    if response == "ASK_USER":
-        return jsonify({"response": "ASK_USER"})
-    else:
-        return jsonify({"response": response})
+    return jsonify({"response": response})
 
-@app.route("/run/<code>", methods=["GET"])
-def process_code(code):
+@app.route("/process_input/run", methods=["POST"])
+def process_code():
     try:
-        output = os.popen("python3 -c \"{}\"".format(code)).read()
+        data = request.get_json()
+        code = data.get('code')
+        with open("temp_code.py", "w") as file:
+            file.write(code)
+        output = os.popen("python3 temp_code.py").read()
         return jsonify({"response": "Output:\n" + output})
     except Exception as e:
         return jsonify({"response": "Error: Unable to execute the code."})

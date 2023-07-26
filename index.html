@@ -5,25 +5,14 @@
     <meta name="viewport" content="width=device-width">
     <title>Ai</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <style>
-        #aiResponse, #output {
-            background-color: black;
-            color: #00FF00; /* Set the text color to green */
-        }
-
-        #output {
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
 <h1>AI</h1>
 <input type="text" id="userInput" placeholder="Enter your question" style="background-color: white;">
 <br>Code:<br>
-<textarea id="aiResponse" rows="10" cols="50" oninput="runCode()" readonly></textarea>
+<textarea id="aiResponse" rows="10" cols="50" oninput="runCode()"></textarea>
 <br>Output:<br>
 <textarea id="output" rows="10" cols="50" readonly></textarea>
-
 
 <script src="script.js"></script>
 </body>
