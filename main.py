@@ -66,5 +66,22 @@ def process_code():
     except Exception as e:
         return jsonify({"response": "Error: Unable to execute the code."})
 
+@app.route("/add_to_knowledge", methods=["POST"])
+def add_user_answer():
+    try:
+        data = request.get_json()
+        question = data.get('question').lower().strip()
+        answer = data.get('answer')
+
+        if question and answer:
+            knowledge.add_to_knowledge(question, answer)
+            return jsonify({"success": True})
+        else:
+            return jsonify({"success": False, "error": "Invalid question or answer."})
+
+    except Exception as e:
+        return jsonify({"success": False, "error": "Failed to add user answer."})
+
+
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=5001)

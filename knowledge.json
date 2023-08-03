@@ -7,7 +7,8 @@
     "whats 2+2": [
         "result = 2 + 2\nprint(result)",
         "x = 2\ny = 2\nsum = x + y\nprint(sum)",
-        "print(2 + 2)"
+        "print(2 + 2)",
+        "print(2+2==4)"
     ],
     "write function that prints hi": [
         "\n\ndef print_hi():\n  print('Hi!')\nprint_hi()",
@@ -231,5 +232,8 @@
     ],
     "are bot": [
         "This is a simple chatbot or a text-based conversational agent.\nIt responds to user inputs using predefined patterns and responses stored in a knowledge base.\nAlthough it lacks real intelligence and is based on fixed response patterns, it is still designed to provide interactions with users and handle certain queries based on the knowledge it has been provided."
+    ],
+    "why did the chicken cross the road": [
+        "To get to the other side!"
     ]
 }
